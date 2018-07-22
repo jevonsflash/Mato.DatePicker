@@ -1,0 +1,60 @@
+﻿<Page x:Class="Mato.Sample.UWP.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:Mato.Sample.UWP"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:uwp="using:Mato.AutoComplete.UWP"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <uwp:AutoCompleteView      Placeholder="Search"
+                                   SearchTextColor="White"
+                                   DisplayPath="Title"
+                                   TextBackgroundColor="Gray"
+                                   SearchBackgroundColor="#DADADA"
+                                   SelectedCommand="{Binding ItemSelectedCommand}"
+                                   SelectedItem="{Binding SelectedItem}"
+                                   ShowSearchButton="False"
+                                   SuggestionBackgroundColor="DimGray"
+                                   Suggestions="{Binding Musics,Mode=TwoWay}">
+
+            <uwp:AutoCompleteView.SuggestionItemDataTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"
+                               Foreground="Black"></TextBlock>
+                </DataTemplate>
+
+            </uwp:AutoCompleteView.SuggestionItemDataTemplate>
+        </uwp:AutoCompleteView>
+        <ListView Grid.Row="1"
+                  HorizontalAlignment="Stretch"
+                  ItemsSource="{Binding Musics,Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid HorizontalAlignment="Stretch"
+                          Width="500">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                                   Text="{Binding Title}"></TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding AlbumTitle}"></TextBlock>
+                        <TextBlock Grid.Column="2"
+                                   Text="{Binding Artist}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</Page>

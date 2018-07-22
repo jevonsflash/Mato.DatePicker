@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mato.CalendarView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="8,0" x:Name="GridControls">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="BtnPrior" Text="后退" AutomationId="ButtonBefore" HorizontalOptions="StartAndExpand" Grid.Column="0" Command="{Binding PriorCommand}"/>
+            <Label x:Name="LblMonthYear" HorizontalOptions="CenterAndExpand" AutomationId="LabelMonthYear" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Text="{Binding YearMonthLabel}"
+                   />
+            <Button x:Name="BtnNext" Text="前进" AutomationId="ButtonAfter" HorizontalOptions="EndAndExpand" Grid.Column="2" Command="{Binding NextCommand}" />
+        </Grid>
+
+        <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" x:Name="GridCalendar">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblSun" Grid.Row="0" Grid.Column="0"  FontAttributes="Bold" />
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblMon" Grid.Row="0" Grid.Column="1"  FontAttributes="Bold" />
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblTue" Grid.Row="0" Grid.Column="2"  FontAttributes="Bold" />
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblWed" Grid.Row="0" Grid.Column="3"  FontAttributes="Bold" />
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblThu" Grid.Row="0" Grid.Column="4"  FontAttributes="Bold" />
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblFri" Grid.Row="0" Grid.Column="5"  FontAttributes="Bold"/>
+            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" x:Name="LblSat" Grid.Row="0" Grid.Column="6"  FontAttributes="Bold" />
+            <StackLayout Orientation="Vertical" Grid.Column="0" x:Name="StklSun" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="1" x:Name="StklMon" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="2" x:Name="StklTue" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="3" x:Name="StklWed" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="4" x:Name="StklThu" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="5" x:Name="StklFri" Grid.Row="1" />
+            <StackLayout Orientation="Vertical" Grid.Column="6" x:Name="StklSat" Grid.Row="1" />
+        </Grid>
+    </Grid>
+</ContentView>

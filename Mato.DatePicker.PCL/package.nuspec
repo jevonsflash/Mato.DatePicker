@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <!--*-->
+    <id>$id$</id>
+    <!--*-->
+    <version>1.0.1.0</version>
+    <title>
+    </title>
+    <!--*-->
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <!--
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--*-->
+    <description>$description$</description>
+    <!--*-->
+    <releaseNotes>Fixed&amp;#x0020;the&amp;#x0020;problem&amp;#x0020;of&amp;#x0020;showing&amp;#x0020;confusion&amp;#x0020;after&amp;#x0020;clicking&amp;#x0020;on&amp;#x0020;the&amp;#x0020;project&amp;#x000D;&amp;#x000A;</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>
+    </tags>
+    <dependencies>
+   <group targetFramework="portable45-net45+win8+wpa81">
+      <dependency id="Xamarin.Forms" version="2.3.4.247" />
+   </group>
+</dependencies>
+  </metadata>
+</package>
