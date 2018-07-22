@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Mato.DatePicker.iOS")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This is a Datepicker with Chinese lunar calendar view ，This assembly works for iOS 9.3 and later")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("MatoApp")]
 [assembly: AssemblyProduct("Mato.DatePicker.iOS")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]

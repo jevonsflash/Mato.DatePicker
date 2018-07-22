@@ -1,29 +1,23 @@
 <?xml version="1.0"?>
-<package>
+<package >
   <metadata>
-    <!--*-->
     <id>$id$</id>
-    <!--*-->
     <version>$version$</version>
     <title>$title$</title>
-    <!--*-->
     <authors>$author$</authors>
     <owners>$author$</owners>
-
     <!--<licenseUrl>https://github.com/MatoApps/Mato.DatePicker</licenseUrl>-->
     <projectUrl>https://github.com/MatoApps/Mato.DatePicker</projectUrl>
     <!--<iconUrl></iconUrl>-->
-
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--*-->
     <description>$description$</description>
-    <!--*-->
     <!--<releaseNotes></releaseNotes>-->
     <copyright>$copyright$</copyright>
     <tags>Xamarin DatePicker Calendar</tags>
     <dependencies>
       <group targetFramework="portable45-net45+win8+wpa81">
         <dependency id="Xamarin.Forms" version="2.3.4.247" />
+        <dependency id="Mato.DatePicker.PCL" version="1.0.0.0" />
       </group>
     </dependencies>
   </metadata>
