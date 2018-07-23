@@ -14,7 +14,7 @@ namespace Mato.Sample
         {
             InitializeComponent();
             this.BindingContext = new MainPageViewModel();
-            this.Container.FadeTo(0, 0);
+            this.Container.TranslateTo(0, -1000);
         }
 
         private string _current = "";
@@ -33,7 +33,7 @@ namespace Mato.Sample
             var calv = MainCalendarView;
             calv.InitDate = InitStringEntry.Text;
             calv.IsMultipleSelect = IsMutiSelButton.IsToggled;
-            this.Container.FadeTo(1);
+            this.Container.TranslateTo(0, 0);
 
 
         }
@@ -42,7 +42,7 @@ namespace Mato.Sample
         {
           var vm=  this.BindingContext as MainPageViewModel;
             vm.Result.Add(_current);
-            this.Container.FadeTo(0);
+            this.Container.TranslateTo(0, 1000);
         }
     }
 }

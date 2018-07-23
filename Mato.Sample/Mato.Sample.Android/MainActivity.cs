@@ -7,7 +7,6 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Mato.DatePicker.Android;
-using Mato.Sample.Droid.Resources;
 
 namespace Mato.Sample.Droid
 {

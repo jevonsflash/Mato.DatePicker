@@ -11,7 +11,7 @@
 
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("Mato.Sample.Droid.Resource", IsApplication=true)]
 
-namespace Mato.Sample.Droid.Resources
+namespace Mato.Sample.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Mato.Sample.Droid.Resources
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Mato.Sample.Droid.Resources.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Mato.Sample.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
