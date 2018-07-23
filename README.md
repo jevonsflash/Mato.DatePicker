@@ -1,5 +1,7 @@
 # Mato.DatePicker 
 
+![avatar](https://github.com/MatoApps/Mato.DatePicker/blob/master/Assets/ss.gif)
+
 ## 说明
 1. 这是一个带有农历日历的日期选择Xamarin控件
 2. 可以指定初始日期
